@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassava Leaf Detection App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Welcome to the Cassava Leaf Detection App</h1>
+            <p>Upload an image to detect cassava leaves.</p>
+            <input type="file" id="imageUpload" accept="image/*" >
+            <canvas id="imageCanvas" width="300" height="300"></canvas>
+            <button id="detectButton">Detect</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About the App</h2>
+            <p>
+                The Cassava Leaf Detection App uses a simulated algorithm to identify cassava leaves in uploaded images.
+                It provides a demonstration of the app's capabilities.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, please contact us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+        </div>
+    </section>
+
+    <section id="resultSection" class="section">
+        <div class="container">
+            <h2>Result</h2>
+            <p id="resultText"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Cassava Leaf Detection App</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
